@@ -32,7 +32,7 @@
 				<Property Name="GenerateSoundBanks\x64_SelectedPlatforms" Type="string" Value="ecjRt754/EOZ4j2RpsB8VFFTn3NoN4tItbo+R+b9T9k="/>
 				<Property Name="GenerateSoundBanks\x64_SelectedSoundBanks" Type="string" Value="LrvZ5vPFL0G7liQP3pmIzA=="/>
 				<Property Name="HardwareController\CurrentSession" Type="string" Value="{2451DD2E-A7B2-45E6-B93B-6F49B9B887AD}"/>
-				<Property Name="HardwareController\{2451DD2E-A7B2-45E6-B93B-6F49B9B887AD}\x64_ActiveGroups" Type="string" Value="g3WC4vqgQkS6bimDI98SJgGJqR//////qEkbKsuM3UaWbpD8GnLM8QGJqR//////"/>
+				<Property Name="HardwareController\{2451DD2E-A7B2-45E6-B93B-6F49B9B887AD}\x64_ActiveGroups" Type="string" Value="g3WC4vqgQkS6bimDI98SJgGJC4v/////qEkbKsuM3UaWbpD8GnLM8QGJC4v/////"/>
 				<Property Name="MeterView\LastObject1" Type="string" Value="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}"/>
 				<Property Name="MeterView\MeterMode1" Type="int32" Value="1"/>
 				<Property Name="Mixing Desk\LastSession" Type="string" Value="{00000000-0000-0000-0000-000000000000}"/>
@@ -62,7 +62,7 @@
 				<Property Name="ProjectExplorer\x64_Expanded_20_1" Type="string" Value=""/>
 				<Property Name="ProjectExplorer\x64_Expanded_21_1" Type="string" Value=""/>
 				<Property Name="ProjectExplorer\x64_Expanded_2_1" Type="string" Value="pOuX7tfz10GRJMNTFFxVw7WTUFqJ4J1Ct2AxbKr7MNk6xy0qjI5gQ67uQJLfakAVO0WaE1QctEm705gDXyHJ36gDeGKugyRKlCTMoMgsrB/HlMgAYIFoSpyZnOTVW1FHdfJsHfSYGEugUPwojIKDhQMg0Tdc0mBNg6ZGXSZe55E="/>
-				<Property Name="ProjectExplorer\x64_Expanded_3_1" Type="string" Value="JmwbGzFQTEOjWlTY4gzs5DMMfBcE3W1GunNppmTsfmzPakpgOQMDSJvSPfGXOo+0K8HvFiYMLkuTWek1pZxyjXzONfGXpl9NtD9IzXEpmbfsWYWZ3qdDTrvC2lTlFL74"/>
+				<Property Name="ProjectExplorer\x64_Expanded_3_1" Type="string" Value="JmwbGzFQTEOjWlTY4gzs5DMMfBcE3W1GunNppmTsfmx8zjXxl6ZfTbQ/SM1xKZm37FmFmd6nQ067wtpU5RS++A=="/>
 				<Property Name="ProjectExplorer\x64_Expanded_4_1" Type="string" Value=""/>
 				<Property Name="ProjectExplorer\x64_Expanded_5_1" Type="string" Value=""/>
 				<Property Name="ProjectExplorer\x64_Expanded_6_1" Type="string" Value="2aDsSyhx/0ion370qqDCWw=="/>

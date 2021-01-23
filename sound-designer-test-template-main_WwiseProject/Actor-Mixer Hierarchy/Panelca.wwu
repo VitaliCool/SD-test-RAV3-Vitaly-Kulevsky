@@ -754,7 +754,7 @@
 						<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 						<Property Name="Volume" Type="Real64">
 							<ValueList>
-								<Value>12</Value>
+								<Value>-1</Value>
 							</ValueList>
 						</Property>
 					</PropertyList>
@@ -771,11 +771,6 @@
 							<PropertyList>
 								<Property Name="3DPosition" Type="int16" Value="1"/>
 								<Property Name="3DSpatialization" Type="int16" Value="1"/>
-								<Property Name="Highpass" Type="int16">
-									<ValueList>
-										<Value>22</Value>
-									</ValueList>
-								</Property>
 								<Property Name="InitialDelay" Type="Real64">
 									<ModifierList>
 										<ModifierInfo>
@@ -785,7 +780,7 @@
 								</Property>
 								<Property Name="Lowpass" Type="int16">
 									<ValueList>
-										<Value>51</Value>
+										<Value>34</Value>
 									</ValueList>
 									<ModifierList>
 										<ModifierInfo>
@@ -807,7 +802,7 @@
 								</Property>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
-										<Value>12</Value>
+										<Value>6</Value>
 									</ValueList>
 								</Property>
 							</PropertyList>
@@ -816,7 +811,7 @@
 									<Custom CreatedFrom="{D7408023-4D06-46C0-9AB8-C0FB77D10E16}">
 										<Attenuation Name="New Attenuation (Custom)" ID="{9C18D788-043C-431A-996B-088C3EF2083F}" ShortID="146513167">
 											<PropertyList>
-												<Property Name="RadiusMax" Type="Real64" Value="2"/>
+												<Property Name="RadiusMax" Type="Real64" Value="3"/>
 											</PropertyList>
 											<CurveUsageInfoList>
 												<VolumeDryUsage>
@@ -832,22 +827,22 @@
 																	<Flags>5</Flags>
 																</Point>
 																<Point>
-																	<XPos>0.551724</XPos>
+																	<XPos>0.827586</XPos>
 																	<YPos>-5.15687</YPos>
 																	<Flags>0</Flags>
 																</Point>
 																<Point>
-																	<XPos>0.97806</XPos>
-																	<YPos>-9.58506</YPos>
+																	<XPos>1.41066</XPos>
+																	<YPos>-7.76201</YPos>
 																	<Flags>0</Flags>
 																</Point>
 																<Point>
-																	<XPos>1.37618</XPos>
-																	<YPos>-15.81121</YPos>
+																	<XPos>2.06427</XPos>
+																	<YPos>-11.22446</YPos>
 																	<Flags>0</Flags>
 																</Point>
 																<Point>
-																	<XPos>2</XPos>
+																	<XPos>3</XPos>
 																	<YPos>-33.50335</YPos>
 																	<Flags>37</Flags>
 																</Point>
@@ -877,7 +872,7 @@
 																	<Flags>5</Flags>
 																</Point>
 																<Point>
-																	<XPos>2</XPos>
+																	<XPos>3</XPos>
 																	<YPos>100</YPos>
 																	<Flags>37</Flags>
 																</Point>
@@ -898,7 +893,7 @@
 																	<Flags>5</Flags>
 																</Point>
 																<Point>
-																	<XPos>2</XPos>
+																	<XPos>3</XPos>
 																	<YPos>90.8451</YPos>
 																	<Flags>37</Flags>
 																</Point>
@@ -916,7 +911,10 @@
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A504E9DE-0A74-4952-A479-CF785C5D7EB1}"/>
 								</Reference>
-								<Reference Name="Effect0">
+								<Reference Name="Effect0" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
+									<ObjectRef Name="Next_Room" ID="{6CAFD7CA-D8F8-4947-8B86-1B68A5EBDC0A}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+								</Reference>
+								<Reference Name="Effect1">
 									<Custom CreatedFrom="{577F1466-A63B-47F7-98BD-C56E433F8B5D}">
 										<Effect Name="Room_Small_(Custom)" ID="{A39959CA-92B6-4718-8F7E-C215F91CD636}" ShortID="188419457" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
 											<PropertyList>
@@ -924,23 +922,20 @@
 												<Property Name="Density" Type="Real32" Value="44"/>
 												<Property Name="Diffusion" Type="Real32" Value="46"/>
 												<Property Name="DryLevel" Type="Real32" Value="-0.3"/>
-												<Property Name="ERLevel" Type="Real32" Value="-23"/>
+												<Property Name="ERLevel" Type="Real32" Value="-9"/>
 												<Property Name="ERPattern" Type="int32" Value="22"/>
 												<Property Name="Filter1Freq" Type="Real32" Value="590"/>
 												<Property Name="Filter3Freq" Type="Real32" Value="8440"/>
 												<Property Name="Filter3Gain" Type="Real32" Value="-4.5"/>
 												<Property Name="HFDamping" Type="Real32" Value="2.7"/>
 												<Property Name="PreDelay" Type="Real32" Value="12"/>
-												<Property Name="ReverbLevel" Type="Real32" Value="-22"/>
+												<Property Name="ReverbLevel" Type="Real32" Value="-35"/>
 												<Property Name="RoomShape" Type="Real32" Value="55"/>
 												<Property Name="RoomSize" Type="Real32" Value="15"/>
 												<Property Name="StereoWidth" Type="Real32" Value="90"/>
 											</PropertyList>
 										</Effect>
 									</Custom>
-								</Reference>
-								<Reference Name="Effect1" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
-									<ObjectRef Name="Next_Room" ID="{6CAFD7CA-D8F8-4947-8B86-1B68A5EBDC0A}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
 								</Reference>
 								<Reference Name="OutputBus">
 									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B749DD38-F608-49F1-865C-2E75B9D51927}"/>
@@ -1361,7 +1356,7 @@
 								<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
-										<Value>-2</Value>
+										<Value>3</Value>
 									</ValueList>
 								</Property>
 							</PropertyList>
@@ -1375,6 +1370,13 @@
 							</ReferenceList>
 							<ChildrenList>
 								<Sound Name="amb2" ID="{A2349DFF-67CA-4C10-ADD3-B69141BEB631}" ShortID="157819296">
+									<PropertyList>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>10</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A504E9DE-0A74-4952-A479-CF785C5D7EB1}"/>
@@ -1423,7 +1425,7 @@
 								<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
-										<Value>-1</Value>
+										<Value>6</Value>
 									</ValueList>
 								</Property>
 							</PropertyList>
@@ -1483,7 +1485,7 @@
 								<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
-										<Value>-14</Value>
+										<Value>-13</Value>
 									</ValueList>
 								</Property>
 							</PropertyList>
