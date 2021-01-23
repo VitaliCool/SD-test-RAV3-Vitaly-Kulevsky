@@ -19,7 +19,7 @@
 				<AuxBus Id="348963605" Name="reverb" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Auxs\reverb"/>
 			</IncludedAuxBusses>
 		</SoundBank>
-		<SoundBank Id="1544306476" Language="SFX" Hash="32222372">
+		<SoundBank Id="1544306476" Language="SFX" Hash="739292351">
 			<ObjectPath>\SoundBanks\Panelka\Scene1</ObjectPath>
 			<ShortName>Scene1</ShortName>
 			<Path>Scene1.bnk</Path>
