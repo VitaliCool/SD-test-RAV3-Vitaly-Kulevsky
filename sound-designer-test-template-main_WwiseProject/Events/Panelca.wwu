@@ -66,6 +66,7 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+						<Event Name="Music" ID="{A5D32AEB-8B06-4015-9ECA-D5B422BC2C4D}"/>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="LightSound" ID="{177C0C33-DD04-466D-BA73-69A664EC7E6C}" ShortID="185339405">

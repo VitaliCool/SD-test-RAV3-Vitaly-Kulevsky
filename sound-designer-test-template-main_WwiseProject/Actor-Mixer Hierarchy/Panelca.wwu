@@ -793,7 +793,6 @@
 								</Property>
 								<Property Name="OverrideEarlyReflections" Type="bool" Value="True"/>
 								<Property Name="OverrideEffect" Type="bool" Value="True"/>
-								<Property Name="OverrideGameAuxSends" Type="bool" Value="True"/>
 								<Property Name="OverridePositioning" Type="bool" Value="True"/>
 								<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
 								<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
@@ -921,6 +920,7 @@
 												<Property Name="DecayTime" Type="Real32" Value="0.7"/>
 												<Property Name="Density" Type="Real32" Value="44"/>
 												<Property Name="Diffusion" Type="Real32" Value="46"/>
+												<Property Name="DryLevel" Type="Real32" Value="-7.3"/>
 												<Property Name="ERLevel" Type="Real32" Value="-23"/>
 												<Property Name="ERPattern" Type="int32" Value="22"/>
 												<Property Name="Filter1Freq" Type="Real32" Value="590"/>
@@ -941,9 +941,6 @@
 								</Reference>
 								<Reference Name="OutputBus">
 									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B749DD38-F608-49F1-865C-2E75B9D51927}"/>
-								</Reference>
-								<Reference Name="ReflectionsAuxSend">
-									<ObjectRef Name="reverb" ID="{FC559796-E46B-4520-B688-CD16F1606037}" WorkUnitID="{B749DD38-F608-49F1-865C-2E75B9D51927}"/>
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
@@ -1413,7 +1410,7 @@
 								<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
-										<Value>-6</Value>
+										<Value>-4</Value>
 									</ValueList>
 								</Property>
 							</PropertyList>
@@ -1449,6 +1446,63 @@
 									</ChildrenList>
 									<ActiveSourceList>
 										<ActiveSource Name="transformator" ID="{23A605B9-DF5F-46A6-BBB9-8A8A4B2CB045}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
+					</ChildrenList>
+				</ActorMixer>
+				<ActorMixer Name="music" ID="{5A5093B5-E089-429D-B760-316CAAFB30D9}" ShortID="694398850">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A504E9DE-0A74-4952-A479-CF785C5D7EB1}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B749DD38-F608-49F1-865C-2E75B9D51927}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<RandomSequenceContainer Name="music_loop" ID="{E18F1ABB-0B91-4B98-B155-2D9CF9FC2BA3}" ShortID="1016257803">
+							<PropertyList>
+								<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+								<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+								<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="1.5"/>
+								<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-12</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A504E9DE-0A74-4952-A479-CF785C5D7EB1}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B749DD38-F608-49F1-865C-2E75B9D51927}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="music_VK" ID="{EE702D4C-5781-4F1E-8DD9-89C4F0FCD8A4}" ShortID="735002304">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A504E9DE-0A74-4952-A479-CF785C5D7EB1}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B749DD38-F608-49F1-865C-2E75B9D51927}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="music_VK" ID="{D51BAA45-FA22-43E5-A4E8-89A35EBBEF91}">
+											<Language>SFX</Language>
+											<AudioFile>music_VK.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="404275201"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="music_VK" ID="{D51BAA45-FA22-43E5-A4E8-89A35EBBEF91}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
 							</ChildrenList>

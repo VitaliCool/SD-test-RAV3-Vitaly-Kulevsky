@@ -11,16 +11,12 @@
 	<StreamedFiles/>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="1355168291" Language="SFX" Hash="2304585335">
+		<SoundBank Id="1355168291" Language="SFX" Hash="1020451191">
 			<ObjectPath>Init</ObjectPath>
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
-			<IncludedAuxBusses>
-				<AuxBus Id="348963605" Name="reverb" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\reverb"/>
-				<AuxBus Id="373392551" Name="New_Auxiliary_Bus" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\New_Auxiliary_Bus"/>
-			</IncludedAuxBusses>
 		</SoundBank>
-		<SoundBank Id="1544306476" Language="SFX" Hash="2437768002">
+		<SoundBank Id="1544306476" Language="SFX" Hash="1064243627">
 			<ObjectPath>\SoundBanks\Panelka\Scene1</ObjectPath>
 			<ShortName>Scene1</ShortName>
 			<Path>Scene1.bnk</Path>
@@ -68,9 +64,6 @@
 							<Path>SFX\mix_ambience\ambience_cinema2_D79FB2B7.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
-					<AuxBusSends>
-						<AuxBus Id="348963605" Name="reverb" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\reverb"/>
-					</AuxBusSends>
 				</Event>
 				<Event Id="2385628198" Name="Footsteps" ObjectPath="\Events\Panelca\Foley\Footsteps" DurationType="OneShot" DurationMin="0.400000" DurationMax="0.400000">
 					<IncludedMemoryFiles>
@@ -181,6 +174,14 @@
 						<File Id="919796631" Language="SFX">
 							<ShortName>jump_08.wav</ShortName>
 							<Path>SFX\jump_08_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="3991942870" Name="Music" ObjectPath="\Events\Panelca\Ambience\Music" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="404275201" Language="SFX">
+							<ShortName>music_VK.wav</ShortName>
+							<Path>SFX\music_VK_10C4C929.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>

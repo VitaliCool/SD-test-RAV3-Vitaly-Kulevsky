@@ -17,6 +17,7 @@ namespace AK
         static const AkUniqueID DOORS = 2150196036U;
         static const AkUniqueID FOOTSTEPS = 2385628198U;
         static const AkUniqueID JUMPSOUND = 1000191198U;
+        static const AkUniqueID MUSIC = 3991942870U;
         static const AkUniqueID SOUND_LIGHT = 1327154087U;
     } // namespace EVENTS
 
@@ -30,12 +31,6 @@ namespace AK
     {
         static const AkUniqueID MASTER_AUDIO_BUS = 3803692087U;
     } // namespace BUSSES
-
-    namespace AUX_BUSSES
-    {
-        static const AkUniqueID NEW_AUXILIARY_BUS = 373392551U;
-        static const AkUniqueID REVERB = 348963605U;
-    } // namespace AUX_BUSSES
 
     namespace AUDIO_DEVICES
     {

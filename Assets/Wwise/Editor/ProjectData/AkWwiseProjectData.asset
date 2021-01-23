@@ -30,7 +30,7 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: 38dd49b708f6f149865c2e75b9d51927
     GuidInternal: 
-    m_lastTime: -8585902640918280783
+    m_lastTime: -8585902005149370257
     List:
     - name: Master Audio Bus
       guid: d8a41415a61d2a41a17e75ca0c2149f3
@@ -41,28 +41,6 @@ MonoBehaviour:
       - ElementName: Master Audio Bus
         ObjectType: 2
       Path: Default Work Unit\Master Audio Bus
-    - name: New_Auxiliary_Bus
-      guid: 67b706084a2a6143ab34c46e333bdd61
-      id: 373392551
-      PathAndIcons:
-      - ElementName: Default Work Unit
-        ObjectType: 12
-      - ElementName: Master Audio Bus
-        ObjectType: 2
-      - ElementName: New_Auxiliary_Bus
-        ObjectType: 1
-      Path: Default Work Unit\Master Audio Bus\New_Auxiliary_Bus
-    - name: reverb
-      guid: 969755fc6be42045b688cd16f1606037
-      id: 348963605
-      PathAndIcons:
-      - ElementName: Default Work Unit
-        ObjectType: 12
-      - ElementName: Master Audio Bus
-        ObjectType: 2
-      - ElementName: reverb
-        ObjectType: 1
-      Path: Default Work Unit\Master Audio Bus\reverb
   BankWwu:
   - PhysicalPath: SoundBanks\Default Work Unit.wwu
     PathAndIcons:
@@ -108,7 +86,7 @@ MonoBehaviour:
     ParentPath: Panelca
     guid: 266c1b1b31504c43a35a54d8e20cece4
     GuidInternal: 
-    m_lastTime: -8585902553690635533
+    m_lastTime: -8585902005149213725
     List:
     - name: Ambience
       guid: ec598599dea7434ebbc2da54e514bef8
@@ -188,6 +166,20 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
+    - name: JumpSound
+      guid: ee04e42cee7f464db7a8ca8870f98055
+      id: 1000191198
+      PathAndIcons:
+      - ElementName: Panelca
+        ObjectType: 12
+      - ElementName: Foley
+        ObjectType: 4
+      - ElementName: JumpSound
+        ObjectType: 3
+      Path: Panelca\Foley\JumpSound
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
     - name: LightSound
       guid: 330c7c1704dd6d46ba7369a664ec7e6c
       id: 1797909248
@@ -197,6 +189,20 @@ MonoBehaviour:
       - ElementName: LightSound
         ObjectType: 4
       Path: Panelca\LightSound
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Music
+      guid: eb2ad3a5068b15409ecad5b422bc2c4d
+      id: 3991942870
+      PathAndIcons:
+      - ElementName: Panelca
+        ObjectType: 12
+      - ElementName: Ambience
+        ObjectType: 4
+      - ElementName: Music
+        ObjectType: 3
+      Path: Panelca\Ambience\Music
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -258,6 +264,6 @@ MonoBehaviour:
   - /sound-designer-test-template-main_WwiseProject
   - /sound-designer-test-template-main_WwiseProject/Events
   - /sound-designer-test-template-main_WwiseProject/Events/Panelca
-  - /sound-designer-test-template-main_WwiseProject/Events/Panelca/LightSound
+  - /sound-designer-test-template-main_WwiseProject/Events/Panelca/Ambience
   autoPopulateEnabled: 1
   CurrentPluginConfig: 
