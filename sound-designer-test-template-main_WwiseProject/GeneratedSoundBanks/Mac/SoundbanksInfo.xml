@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Mac" BasePlatform="Mac" SchemaVersion="12" SoundbankVersion="135">
+	<RootPaths>
+		<ProjectRoot>E:\sound-designer-test-template-main\sound-designer-test-template-main\sound-designer-test-template-main_WwiseProject\</ProjectRoot>
+		<SourceFilesRoot>E:\sound-designer-test-template-main\sound-designer-test-template-main\sound-designer-test-template-main_WwiseProject\.cache\Mac\</SourceFilesRoot>
+		<SoundBanksRoot>E:\sound-designer-test-template-main\sound-designer-test-template-main\sound-designer-test-template-main_WwiseProject\GeneratedSoundBanks\Mac\</SoundBanksRoot>
+		<ExternalSourcesInputFile></ExternalSourcesInputFile>
+		<ExternalSourcesOutputRoot>E:\sound-designer-test-template-main\sound-designer-test-template-main\sound-designer-test-template-main_WwiseProject\GeneratedSoundBanks\Mac</ExternalSourcesOutputRoot>
+	</RootPaths>
+	<DialogueEvents/>
+	<StreamedFiles/>
+	<MediaFilesNotInAnyBank/>
+	<SoundBanks>
+		<SoundBank Id="1355168291" Language="SFX" Hash="2304585335">
+			<ObjectPath>Init</ObjectPath>
+			<ShortName>Init</ShortName>
+			<Path>Init.bnk</Path>
+			<IncludedAuxBusses>
+				<AuxBus Id="348963605" Name="reverb" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\reverb"/>
+				<AuxBus Id="373392551" Name="New_Auxiliary_Bus" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\New_Auxiliary_Bus"/>
+			</IncludedAuxBusses>
+		</SoundBank>
+		<SoundBank Id="1544306476" Language="SFX" Hash="952902945">
+			<ObjectPath>\SoundBanks\Panelka\Scene1</ObjectPath>
+			<ShortName>Scene1</ShortName>
+			<Path>Scene1.bnk</Path>
+			<IncludedEvents>
+				<Event Id="85412153" Name="Ambience" ObjectPath="\Events\Panelca\Ambience\Ambience" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="945652961" Language="SFX">
+							<ShortName>amb2.wav</ShortName>
+							<Path>SFX\amb2_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2150196036" Name="Doors" ObjectPath="\Events\Panelca\Doors\Doors" MaxAttenuation="2.000000" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="42349644" Language="SFX">
+							<ShortName>mix_ambience\ambience_enter.wav</ShortName>
+							<Path>SFX\mix_ambience\ambience_enter_D79FB2B7.wem</Path>
+						</File>
+						<File Id="207803242" Language="SFX">
+							<ShortName>mix_ambience\ambience_cinema.wav</ShortName>
+							<Path>SFX\mix_ambience\ambience_cinema_D79FB2B7.wem</Path>
+						</File>
+						<File Id="232179080" Language="SFX">
+							<ShortName>mix_ambience\ambience_trouble.wav</ShortName>
+							<Path>SFX\mix_ambience\ambience_trouble_D79FB2B7.wem</Path>
+						</File>
+						<File Id="377643135" Language="SFX">
+							<ShortName>mix_ambience\ambience_duck.wav</ShortName>
+							<Path>SFX\mix_ambience\ambience_duck_D79FB2B7.wem</Path>
+						</File>
+						<File Id="415733365" Language="SFX">
+							<ShortName>mix_ambience\ambience_sex.wav</ShortName>
+							<Path>SFX\mix_ambience\ambience_sex_D79FB2B7.wem</Path>
+						</File>
+						<File Id="508160422" Language="SFX">
+							<ShortName>mix_ambience\ambience_news.wav</ShortName>
+							<Path>SFX\mix_ambience\ambience_news_D79FB2B7.wem</Path>
+						</File>
+						<File Id="577335688" Language="SFX">
+							<ShortName>mix_ambience\ambience_cinema_tor.wav</ShortName>
+							<Path>SFX\mix_ambience\ambience_cinema_tor_D79FB2B7.wem</Path>
+						</File>
+						<File Id="858980391" Language="SFX">
+							<ShortName>mix_ambience\ambience_cinema2.wav</ShortName>
+							<Path>SFX\mix_ambience\ambience_cinema2_D79FB2B7.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+					<AuxBusSends>
+						<AuxBus Id="348963605" Name="reverb" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\reverb"/>
+					</AuxBusSends>
+				</Event>
+				<Event Id="2385628198" Name="Footsteps" ObjectPath="\Events\Panelca\Foley\Footsteps" DurationType="OneShot" DurationMin="0.400000" DurationMax="0.400000">
+					<IncludedMemoryFiles>
+						<File Id="65532929" Language="SFX">
+							<ShortName>mix_foot_step_soft\foot_step_soft_01.wav</ShortName>
+							<Path>SFX\mix_foot_step_soft\foot_step_soft_01_10C4C929.wem</Path>
+						</File>
+						<File Id="70454400" Language="SFX">
+							<ShortName>mix_foot_step_soft\foot_step_soft_01-20.wav</ShortName>
+							<Path>SFX\mix_foot_step_soft\foot_step_soft_01-20_10C4C929.wem</Path>
+						</File>
+						<File Id="163131956" Language="SFX">
+							<ShortName>mix_foot_step_soft\foot_step_soft_01-17.wav</ShortName>
+							<Path>SFX\mix_foot_step_soft\foot_step_soft_01-17_10C4C929.wem</Path>
+						</File>
+						<File Id="186039669" Language="SFX">
+							<ShortName>mix_foot_step_soft\foot_step_soft_01-14.wav</ShortName>
+							<Path>SFX\mix_foot_step_soft\foot_step_soft_01-14_10C4C929.wem</Path>
+						</File>
+						<File Id="203887119" Language="SFX">
+							<ShortName>mix_foot_step_soft\foot_step_soft_01-10.wav</ShortName>
+							<Path>SFX\mix_foot_step_soft\foot_step_soft_01-10_10C4C929.wem</Path>
+						</File>
+						<File Id="228767467" Language="SFX">
+							<ShortName>mix_foot_step_soft\foot_step_soft_01-19.wav</ShortName>
+							<Path>SFX\mix_foot_step_soft\foot_step_soft_01-19_10C4C929.wem</Path>
+						</File>
+						<File Id="254048294" Language="SFX">
+							<ShortName>mix_foot_step_soft\foot_step_soft_01-02.wav</ShortName>
+							<Path>SFX\mix_foot_step_soft\foot_step_soft_01-02_10C4C929.wem</Path>
+						</File>
+						<File Id="326462335" Language="SFX">
+							<ShortName>mix_foot_step_soft\foot_step_soft_01-13.wav</ShortName>
+							<Path>SFX\mix_foot_step_soft\foot_step_soft_01-13_10C4C929.wem</Path>
+						</File>
+						<File Id="342232479" Language="SFX">
+							<ShortName>mix_foot_step_soft\foot_step_soft_01-04.wav</ShortName>
+							<Path>SFX\mix_foot_step_soft\foot_step_soft_01-04_10C4C929.wem</Path>
+						</File>
+						<File Id="407434179" Language="SFX">
+							<ShortName>mix_foot_step_soft\foot_step_soft_01-06.wav</ShortName>
+							<Path>SFX\mix_foot_step_soft\foot_step_soft_01-06_10C4C929.wem</Path>
+						</File>
+						<File Id="448070281" Language="SFX">
+							<ShortName>mix_foot_step_soft\foot_step_soft_01-09.wav</ShortName>
+							<Path>SFX\mix_foot_step_soft\foot_step_soft_01-09_10C4C929.wem</Path>
+						</File>
+						<File Id="554195047" Language="SFX">
+							<ShortName>mix_foot_step_soft\foot_step_soft_01-01.wav</ShortName>
+							<Path>SFX\mix_foot_step_soft\foot_step_soft_01-01_10C4C929.wem</Path>
+						</File>
+						<File Id="558979499" Language="SFX">
+							<ShortName>mix_foot_step_soft\foot_step_soft_01-18.wav</ShortName>
+							<Path>SFX\mix_foot_step_soft\foot_step_soft_01-18_10C4C929.wem</Path>
+						</File>
+						<File Id="593850554" Language="SFX">
+							<ShortName>mix_foot_step_soft\foot_step_soft_01-16.wav</ShortName>
+							<Path>SFX\mix_foot_step_soft\foot_step_soft_01-16_10C4C929.wem</Path>
+						</File>
+						<File Id="654304006" Language="SFX">
+							<ShortName>mix_foot_step_soft\foot_step_soft_01-12.wav</ShortName>
+							<Path>SFX\mix_foot_step_soft\foot_step_soft_01-12_10C4C929.wem</Path>
+						</File>
+						<File Id="848544233" Language="SFX">
+							<ShortName>mix_foot_step_soft\foot_step_soft_01-03.wav</ShortName>
+							<Path>SFX\mix_foot_step_soft\foot_step_soft_01-03_10C4C929.wem</Path>
+						</File>
+						<File Id="879653025" Language="SFX">
+							<ShortName>mix_foot_step_soft\foot_step_soft_01-08.wav</ShortName>
+							<Path>SFX\mix_foot_step_soft\foot_step_soft_01-08_10C4C929.wem</Path>
+						</File>
+						<File Id="900749754" Language="SFX">
+							<ShortName>mix_foot_step_soft\foot_step_soft_01-07.wav</ShortName>
+							<Path>SFX\mix_foot_step_soft\foot_step_soft_01-07_10C4C929.wem</Path>
+						</File>
+						<File Id="903538737" Language="SFX">
+							<ShortName>mix_foot_step_soft\foot_step_soft_01-11.wav</ShortName>
+							<Path>SFX\mix_foot_step_soft\foot_step_soft_01-11_10C4C929.wem</Path>
+						</File>
+						<File Id="958714029" Language="SFX">
+							<ShortName>mix_foot_step_soft\foot_step_soft_01-15.wav</ShortName>
+							<Path>SFX\mix_foot_step_soft\foot_step_soft_01-15_10C4C929.wem</Path>
+						</File>
+						<File Id="1055460999" Language="SFX">
+							<ShortName>mix_foot_step_soft\foot_step_soft_01-05.wav</ShortName>
+							<Path>SFX\mix_foot_step_soft\foot_step_soft_01-05_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1327154087" Name="Sound_Light" ObjectPath="\Events\Panelca\LightSound\Sound_Light" MaxAttenuation="3.000000" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="119089390" Language="SFX">
+							<ShortName>transformator.wav</ShortName>
+							<Path>SFX\transformator_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+			</IncludedEvents>
+		</SoundBank>
+	</SoundBanks>
+</SoundBanksInfo>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{4BECA0D9-7128-48FF-A89F-7EF4AAA0C25B}" SchemaVersion="97">
+	<SoundBanks>
+		<WorkUnit Name="Panelka" ID="{4BECA0D9-7128-48FF-A89F-7EF4AAA0C25B}" PersistMode="Standalone">
+			<ChildrenList>
+				<SoundBank Name="Scene1" ID="{E6D9BB2E-C5F3-412F-BB96-240FDE9988CC}">
+					<ObjectInclusionList>
+						<ObjectRef Name="Panelca" ID="{1B1B6C26-5031-434C-A35A-54D8E20CECE4}" WorkUnitID="{1B1B6C26-5031-434C-A35A-54D8E20CECE4}" Origin="Manual" Filter="7"/>
+					</ObjectInclusionList>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
+			</ChildrenList>
+		</WorkUnit>
+	</SoundBanks>
+</WwiseDocument>

@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 708715d9ce8b3484b88bb0eb4cc9f623, type: 3}
+  m_Name: 0806B767-2A4A-4361-AB34-C46E333BDD61
+  m_EditorClassIdentifier: 
+  objectName: New_Auxiliary_Bus
+  id: 373392551
+  guid: 0806B767-2A4A-4361-AB34-C46E333BDD61

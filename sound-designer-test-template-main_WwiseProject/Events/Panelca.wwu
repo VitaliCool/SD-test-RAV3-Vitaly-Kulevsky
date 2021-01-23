@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{1B1B6C26-5031-434C-A35A-54D8E20CECE4}" SchemaVersion="97">
+	<Events>
+		<WorkUnit Name="Panelca" ID="{1B1B6C26-5031-434C-A35A-54D8E20CECE4}" PersistMode="Standalone">
+			<ChildrenList>
+				<Folder Name="Foley" ID="{F135CE7C-A697-4D5F-B43F-48CD712999B7}" ShortID="891541225">
+					<ChildrenList>
+						<Event Name="Footsteps" ID="{9DA38905-C423-4015-AB88-54E680AFBEBA}">
+							<ChildrenList>
+								<Action Name="" ID="{7A379A80-DC51-4D19-BCFC-6D049E35343F}" ShortID="137913855">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="mix_foot_step_soft" ID="{8B18CDD5-54C2-4FB4-95EC-75FB072C56EE}" WorkUnitID="{00C894C7-8160-4A68-9C99-9CE4D55B5147}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="Doors" ID="{BF245F17-AB50-496B-9D93-473A7DB06615}" ShortID="17681592">
+					<ChildrenList>
+						<Event Name="Doors" ID="{39503DB3-D468-4648-A245-193227DAC7D4}">
+							<ChildrenList>
+								<Action Name="" ID="{49BD9783-D188-4199-8A1F-CAB35929226B}" ShortID="57198117">
+									<PropertyList>
+										<Property Name="Lowpass" Type="int16">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{4F6EE141-4424-42C0-9C3A-760050F5983E}"/>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="mix_ambience" ID="{8029103F-0632-46CF-9203-C7E88B725594}" WorkUnitID="{00C894C7-8160-4A68-9C99-9CE4D55B5147}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="Ambience" ID="{998559EC-A7DE-4E43-BBC2-DA54E514BEF8}" ShortID="14202305">
+					<ChildrenList>
+						<Event Name="Ambience" ID="{D3ED4F24-64A8-4BFE-B6CC-1F6BCE24C630}">
+							<ChildrenList>
+								<Action Name="" ID="{3A79E811-F6A5-4378-9690-8F795EB3DA58}" ShortID="371748907">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Amb" ID="{627803A8-83AE-4A24-9424-CCA0C82CAC1F}" WorkUnitID="{00C894C7-8160-4A68-9C99-9CE4D55B5147}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="LightSound" ID="{177C0C33-DD04-466D-BA73-69A664EC7E6C}" ShortID="185339405">
+					<ChildrenList>
+						<Event Name="Sound_Light" ID="{942E56C9-5EF7-4FAF-8A9A-DC4269BB6E85}">
+							<ChildrenList>
+								<Action Name="" ID="{C5AA5A7A-B938-4A00-96F6-7249DD63B199}" ShortID="922255030">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="light" ID="{139A453B-1C54-49B4-BBD3-98035F21C9DF}" WorkUnitID="{00C894C7-8160-4A68-9C99-9CE4D55B5147}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>

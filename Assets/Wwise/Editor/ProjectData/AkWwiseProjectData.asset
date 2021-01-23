@@ -1,0 +1,263 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5369639eae358244fb27e30db95bf859, type: 3}
+  m_Name: AkWwiseProjectData
+  m_EditorClassIdentifier: 
+  AcousticTextureWwu:
+  - PhysicalPath: Virtual Acoustics\Default Work Unit.wwu
+    PathAndIcons:
+    - ElementName: Default Work Unit
+      ObjectType: 12
+    ParentPath: Default Work Unit
+    guid: cabd2a6e38c77e4b96ee0729abf0ca9e
+    GuidInternal: 
+    m_lastTime: -8585903411927826253
+    List: []
+  AuxBusWwu:
+  - PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
+    PathAndIcons:
+    - ElementName: Default Work Unit
+      ObjectType: 12
+    ParentPath: Default Work Unit
+    guid: 38dd49b708f6f149865c2e75b9d51927
+    GuidInternal: 
+    m_lastTime: -8585902640918280783
+    List:
+    - name: Master Audio Bus
+      guid: d8a41415a61d2a41a17e75ca0c2149f3
+      id: 3803692087
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+      Path: Default Work Unit\Master Audio Bus
+    - name: New_Auxiliary_Bus
+      guid: 67b706084a2a6143ab34c46e333bdd61
+      id: 373392551
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+      - ElementName: New_Auxiliary_Bus
+        ObjectType: 1
+      Path: Default Work Unit\Master Audio Bus\New_Auxiliary_Bus
+    - name: reverb
+      guid: 969755fc6be42045b688cd16f1606037
+      id: 348963605
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+      - ElementName: reverb
+        ObjectType: 1
+      Path: Default Work Unit\Master Audio Bus\reverb
+  BankWwu:
+  - PhysicalPath: SoundBanks\Default Work Unit.wwu
+    PathAndIcons:
+    - ElementName: Default Work Unit
+      ObjectType: 12
+    ParentPath: Default Work Unit
+    guid: 3c04586c4d9fc74ba0ae11463d3fc771
+    GuidInternal: 
+    m_lastTime: -8585903411928454567
+    List: []
+  - PhysicalPath: SoundBanks\Panelka.wwu
+    PathAndIcons:
+    - ElementName: Panelka
+      ObjectType: 12
+    ParentPath: Panelka
+    guid: d9a0ec4b2871ff48a89f7ef4aaa0c25b
+    GuidInternal: 
+    m_lastTime: -8585902913015487431
+    List:
+    - name: Scene1
+      guid: 2ebbd9e6f3c52f41bb96240fde9988cc
+      id: 1544306476
+      PathAndIcons:
+      - ElementName: Panelka
+        ObjectType: 12
+      - ElementName: Scene1
+        ObjectType: 7
+      Path: Panelka\Scene1
+  EventWwu:
+  - PhysicalPath: Events\Default Work Unit.wwu
+    PathAndIcons:
+    - ElementName: Default Work Unit
+      ObjectType: 12
+    ParentPath: Default Work Unit
+    guid: 7b18921570c5524dae60b9dfbb4add3c
+    GuidInternal: 
+    m_lastTime: -8585903411929232495
+    List: []
+  - PhysicalPath: Events\Panelca.wwu
+    PathAndIcons:
+    - ElementName: Panelca
+      ObjectType: 12
+    ParentPath: Panelca
+    guid: 266c1b1b31504c43a35a54d8e20cece4
+    GuidInternal: 
+    m_lastTime: -8585902553690635533
+    List:
+    - name: Ambience
+      guid: ec598599dea7434ebbc2da54e514bef8
+      id: 85412153
+      PathAndIcons:
+      - ElementName: Panelca
+        ObjectType: 12
+      - ElementName: Ambience
+        ObjectType: 4
+      Path: Panelca\Ambience
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Ambience
+      guid: 244fedd3a864fe4bb6cc1f6bce24c630
+      id: 85412153
+      PathAndIcons:
+      - ElementName: Panelca
+        ObjectType: 12
+      - ElementName: Ambience
+        ObjectType: 4
+      - ElementName: Ambience
+        ObjectType: 3
+      Path: Panelca\Ambience\Ambience
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Doors
+      guid: 175f24bf50ab6b499d93473a7db06615
+      id: 2150196036
+      PathAndIcons:
+      - ElementName: Panelca
+        ObjectType: 12
+      - ElementName: Doors
+        ObjectType: 4
+      Path: Panelca\Doors
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Doors
+      guid: b33d503968d44846a245193227dac7d4
+      id: 2150196036
+      PathAndIcons:
+      - ElementName: Panelca
+        ObjectType: 12
+      - ElementName: Doors
+        ObjectType: 4
+      - ElementName: Doors
+        ObjectType: 3
+      Path: Panelca\Doors\Doors
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Foley
+      guid: 7cce35f197a65f4db43f48cd712999b7
+      id: 247557814
+      PathAndIcons:
+      - ElementName: Panelca
+        ObjectType: 12
+      - ElementName: Foley
+        ObjectType: 4
+      Path: Panelca\Foley
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Footsteps
+      guid: 0589a39d23c41540ab8854e680afbeba
+      id: 2385628198
+      PathAndIcons:
+      - ElementName: Panelca
+        ObjectType: 12
+      - ElementName: Foley
+        ObjectType: 4
+      - ElementName: Footsteps
+        ObjectType: 3
+      Path: Panelca\Foley\Footsteps
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: LightSound
+      guid: 330c7c1704dd6d46ba7369a664ec7e6c
+      id: 1797909248
+      PathAndIcons:
+      - ElementName: Panelca
+        ObjectType: 12
+      - ElementName: LightSound
+        ObjectType: 4
+      Path: Panelca\LightSound
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Sound_Light
+      guid: c9562e94f75eaf4f8a9adc4269bb6e85
+      id: 1327154087
+      PathAndIcons:
+      - ElementName: Panelca
+        ObjectType: 12
+      - ElementName: LightSound
+        ObjectType: 4
+      - ElementName: Sound_Light
+        ObjectType: 3
+      Path: Panelca\LightSound\Sound_Light
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+  RtpcWwu:
+  - PhysicalPath: Game Parameters\Default Work Unit.wwu
+    PathAndIcons:
+    - ElementName: Default Work Unit
+      ObjectType: 12
+    ParentPath: Default Work Unit
+    guid: 8da4330ab92f2a499cd00a775240b03d
+    GuidInternal: 
+    m_lastTime: -8585903411929162564
+    List: []
+  StateWwu:
+  - PhysicalPath: States\Default Work Unit.wwu
+    PathAndIcons:
+    - ElementName: Default Work Unit
+      ObjectType: 12
+    ParentPath: Default Work Unit
+    guid: 174f26565795c240b9ed00ffaf71f02a
+    GuidInternal: 
+    m_lastTime: -8585903411928983179
+    List: []
+  SwitchWwu:
+  - PhysicalPath: Switches\Default Work Unit.wwu
+    PathAndIcons:
+    - ElementName: Default Work Unit
+      ObjectType: 12
+    ParentPath: Default Work Unit
+    guid: 49b8aac3648b4b489f34edab7f21ccf9
+    GuidInternal: 
+    m_lastTime: -8585903411929431979
+    List: []
+  TriggerWwu:
+  - PhysicalPath: Triggers\Default Work Unit.wwu
+    PathAndIcons:
+    - ElementName: Default Work Unit
+      ObjectType: 12
+    ParentPath: Default Work Unit
+    guid: 7d7363b42e962b4e9c354b074ac8f553
+    GuidInternal: 
+    m_lastTime: -8585903411928793687
+    List: []
+  ExpandedItems:
+  - /sound-designer-test-template-main_WwiseProject
+  - /sound-designer-test-template-main_WwiseProject/Events
+  - /sound-designer-test-template-main_WwiseProject/Events/Panelca
+  - /sound-designer-test-template-main_WwiseProject/Events/Panelca/LightSound
+  autoPopulateEnabled: 1
+  CurrentPluginConfig: 

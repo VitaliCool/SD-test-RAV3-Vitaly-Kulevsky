@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{B749DD38-F608-49F1-865C-2E75B9D51927}" SchemaVersion="97">
+	<Busses>
+		<WorkUnit Name="Default Work Unit" ID="{B749DD38-F608-49F1-865C-2E75B9D51927}" PersistMode="Standalone">
+			<ChildrenList>
+				<Bus Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}">
+					<ReferenceList>
+						<Reference Name="AudioDevice">
+							<ObjectRef Name="System" ID="{046C95B5-AB75-40A6-83AB-BF2046D77ED2}" WorkUnitID="{59D727B2-25F4-4611-89A0-C6ADF72C7969}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AuxBus Name="reverb" ID="{FC559796-E46B-4520-B688-CD16F1606037}">
+							<ReferenceList>
+								<Reference Name="Effect0">
+									<Custom CreatedFrom="{1AF92D84-49DD-4BBC-8F29-6C6D10082B6E}">
+										<Effect Name="Space_Garage_(Custom)" ID="{11033985-63DA-44FB-ACFE-A3EE84A2590D}" ShortID="533127364" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
+											<PropertyList>
+												<Property Name="DecayTime" Type="Real32" Value="2"/>
+												<Property Name="Density" Type="Real32" Value="100"/>
+												<Property Name="Diffusion" Type="Real32" Value="45"/>
+												<Property Name="ERLevel" Type="Real32" Value="-6"/>
+												<Property Name="ERPattern" Type="int32" Value="30"/>
+												<Property Name="Filter1Freq" Type="Real32" Value="300"/>
+												<Property Name="Filter1Gain" Type="Real32" Value="4"/>
+												<Property Name="Filter2Freq" Type="Real32" Value="2480"/>
+												<Property Name="Filter2Gain" Type="Real32" Value="-24"/>
+												<Property Name="Filter3Freq" Type="Real32" Value="9290"/>
+												<Property Name="Filter3Gain" Type="Real32" Value="0.5"/>
+												<Property Name="Filter3InsertPos" Type="int32" Value="1"/>
+												<Property Name="HFDamping" Type="Real32" Value="1.4"/>
+												<Property Name="PreDelay" Type="Real32" Value="128"/>
+												<Property Name="ReverbLevel" Type="Real32" Value="-1"/>
+												<Property Name="RoomShape" Type="Real32" Value="69"/>
+												<Property Name="RoomSize" Type="Real32" Value="38"/>
+												<Property Name="StereoWidth" Type="Real32" Value="150"/>
+											</PropertyList>
+										</Effect>
+									</Custom>
+								</Reference>
+							</ReferenceList>
+						</AuxBus>
+						<AuxBus Name="New_Auxiliary_Bus" ID="{0806B767-2A4A-4361-AB34-C46E333BDD61}">
+							<ReferenceList>
+								<Reference Name="Effect1" PluginName="Wwise Stereo Delay" CompanyID="0" PluginID="135" PluginType="3">
+									<ObjectRef Name="LR_Slap_with_CrossFeed" ID="{30319A92-C5AC-437A-9864-430059762933}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+								</Reference>
+							</ReferenceList>
+						</AuxBus>
+					</ChildrenList>
+				</Bus>
+			</ChildrenList>
+		</WorkUnit>
+	</Busses>
+</WwiseDocument>
