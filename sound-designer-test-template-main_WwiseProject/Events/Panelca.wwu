@@ -66,7 +66,17 @@
 								</Action>
 							</ChildrenList>
 						</Event>
-						<Event Name="Music" ID="{A5D32AEB-8B06-4015-9ECA-D5B422BC2C4D}"/>
+						<Event Name="Music" ID="{A5D32AEB-8B06-4015-9ECA-D5B422BC2C4D}">
+							<ChildrenList>
+								<Action Name="" ID="{2163F504-C9FA-47E7-A6A4-49C664714633}" ShortID="58460571">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="music_loop" ID="{E18F1ABB-0B91-4B98-B155-2D9CF9FC2BA3}" WorkUnitID="{00C894C7-8160-4A68-9C99-9CE4D55B5147}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="LightSound" ID="{177C0C33-DD04-466D-BA73-69A664EC7E6C}" ShortID="185339405">

@@ -11,12 +11,15 @@
 	<StreamedFiles/>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="1355168291" Language="SFX" Hash="4232304177">
+		<SoundBank Id="1355168291" Language="SFX" Hash="528971642">
 			<ObjectPath>Init</ObjectPath>
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
+			<IncludedAuxBusses>
+				<AuxBus Id="348963605" Name="reverb" ObjectPath="\Master-Mixer Hierarchy\Default Work Unit\Master Audio Bus\Auxs\reverb"/>
+			</IncludedAuxBusses>
 		</SoundBank>
-		<SoundBank Id="1544306476" Language="SFX" Hash="1064243627">
+		<SoundBank Id="1544306476" Language="SFX" Hash="1511044465">
 			<ObjectPath>\SoundBanks\Panelka\Scene1</ObjectPath>
 			<ShortName>Scene1</ShortName>
 			<Path>Scene1.bnk</Path>

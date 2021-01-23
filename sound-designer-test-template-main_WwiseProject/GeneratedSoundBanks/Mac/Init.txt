@@ -1,5 +1,15 @@
 Audio Bus	ID	Name			Wwise Object Path	Notes
+	247557814	foley			\Default Work Unit\Master Audio Bus\foley	
+	1017660616	ambiences			\Default Work Unit\Master Audio Bus\ambiences	
+	3368497452	Auxs			\Default Work Unit\Master Audio Bus\Auxs	
 	3803692087	Master Audio Bus			\Default Work Unit\Master Audio Bus	
+
+Auxiliary Bus	ID	Name			Wwise Object Path	Notes
+	348963605	reverb			\Default Work Unit\Master Audio Bus\Auxs\reverb	
+
+Effect plug-ins	ID	Name	Type				Notes
+	702543456	Tunnel1	Wwise Matrix Reverb			
+	2258521792	Brick_Wall_Minus_1dB_Peak_Slow_Release	Wwise Peak Limiter			
 
 Audio Devices	ID	Name	Type				Notes
 	2317455096	No_Output	No Output			

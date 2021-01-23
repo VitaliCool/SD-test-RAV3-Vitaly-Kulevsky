@@ -8,7 +8,25 @@
 						<Reference Name="AudioDevice">
 							<ObjectRef Name="System" ID="{046C95B5-AB75-40A6-83AB-BF2046D77ED2}" WorkUnitID="{59D727B2-25F4-4611-89A0-C6ADF72C7969}"/>
 						</Reference>
+						<Reference Name="Effect0" PluginName="Wwise Peak Limiter" CompanyID="0" PluginID="110" PluginType="3">
+							<ObjectRef Name="Brick_Wall_Minus_1dB_Peak_Slow_Release" ID="{9FB8DC2B-7F1C-4E4E-8FA5-50872652D2DD}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+						</Reference>
 					</ReferenceList>
+					<ChildrenList>
+						<Bus Name="foley" ID="{A35758DB-F477-4661-B423-FA18A08E85C8}"/>
+						<Bus Name="ambiences" ID="{E510B226-C64F-46AB-82AB-B5D455248FCA}"/>
+						<Bus Name="Auxs" ID="{DA2DA457-AC96-42CF-861E-975F68E5D781}">
+							<ChildrenList>
+								<AuxBus Name="reverb" ID="{57A0F9FD-928F-44A9-AF7E-73D51DA800F7}">
+									<ReferenceList>
+										<Reference Name="Effect0" PluginName="Wwise Matrix Reverb" CompanyID="0" PluginID="115" PluginType="3">
+											<ObjectRef Name="Tunnel1" ID="{CC44B890-9865-4157-965F-86FED27BC4C6}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
+										</Reference>
+									</ReferenceList>
+								</AuxBus>
+							</ChildrenList>
+						</Bus>
+					</ChildrenList>
 				</Bus>
 			</ChildrenList>
 		</WorkUnit>

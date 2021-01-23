@@ -13,13 +13,14 @@
 								</ModifierInfo>
 							</ModifierList>
 						</Property>
+						<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A504E9DE-0A74-4952-A479-CF785C5D7EB1}"/>
 						</Reference>
 						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B749DD38-F608-49F1-865C-2E75B9D51927}"/>
+							<ObjectRef Name="foley" ID="{A35758DB-F477-4661-B423-FA18A08E85C8}" WorkUnitID="{B749DD38-F608-49F1-865C-2E75B9D51927}"/>
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
@@ -585,7 +586,10 @@
 									</ValueList>
 								</Property>
 								<Property Name="MaxReachedBehavior" Type="int16" Value="1"/>
+								<Property Name="OverrideGameAuxSends" Type="bool" Value="True"/>
+								<Property Name="OverridePositioning" Type="bool" Value="True"/>
 								<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="4"/>
+								<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 								<Property Name="UseMaxSoundPerInstance" Type="bool">
 									<ValueList>
 										<Value>True</Value>
@@ -593,7 +597,7 @@
 								</Property>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
-										<Value>-4</Value>
+										<Value>-5</Value>
 									</ValueList>
 								</Property>
 							</PropertyList>
@@ -717,6 +721,9 @@
 									</ActiveSourceList>
 								</Sound>
 							</ChildrenList>
+							<PositioningInfo>
+								<Panner Name="" ID="{5AFC92B5-22EA-4A29-9C3E-74E71D13661F}"/>
+							</PositioningInfo>
 						</RandomSequenceContainer>
 					</ChildrenList>
 				</ActorMixer>
@@ -756,7 +763,7 @@
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A504E9DE-0A74-4952-A479-CF785C5D7EB1}"/>
 						</Reference>
 						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B749DD38-F608-49F1-865C-2E75B9D51927}"/>
+							<ObjectRef Name="ambiences" ID="{E510B226-C64F-46AB-82AB-B5D455248FCA}" WorkUnitID="{B749DD38-F608-49F1-865C-2E75B9D51927}"/>
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
@@ -764,11 +771,6 @@
 							<PropertyList>
 								<Property Name="3DPosition" Type="int16" Value="1"/>
 								<Property Name="3DSpatialization" Type="int16" Value="1"/>
-								<Property Name="GameAuxSendVolume" Type="Real64">
-									<ValueList>
-										<Value>12</Value>
-									</ValueList>
-								</Property>
 								<Property Name="Highpass" Type="int16">
 									<ValueList>
 										<Value>22</Value>
@@ -793,6 +795,7 @@
 								</Property>
 								<Property Name="OverrideEarlyReflections" Type="bool" Value="True"/>
 								<Property Name="OverrideEffect" Type="bool" Value="True"/>
+								<Property Name="OverrideGameAuxSends" Type="bool" Value="True"/>
 								<Property Name="OverridePositioning" Type="bool" Value="True"/>
 								<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
 								<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
@@ -834,13 +837,13 @@
 																	<Flags>0</Flags>
 																</Point>
 																<Point>
-																	<XPos>0.90909</XPos>
-																	<YPos>-16.15731</YPos>
+																	<XPos>0.97806</XPos>
+																	<YPos>-9.58506</YPos>
 																	<Flags>0</Flags>
 																</Point>
 																<Point>
-																	<XPos>1.36991</XPos>
-																	<YPos>-200</YPos>
+																	<XPos>1.37618</XPos>
+																	<YPos>-15.81121</YPos>
 																	<Flags>0</Flags>
 																</Point>
 																<Point>
@@ -920,7 +923,7 @@
 												<Property Name="DecayTime" Type="Real32" Value="0.7"/>
 												<Property Name="Density" Type="Real32" Value="44"/>
 												<Property Name="Diffusion" Type="Real32" Value="46"/>
-												<Property Name="DryLevel" Type="Real32" Value="-7.3"/>
+												<Property Name="DryLevel" Type="Real32" Value="-0.3"/>
 												<Property Name="ERLevel" Type="Real32" Value="-23"/>
 												<Property Name="ERPattern" Type="int32" Value="22"/>
 												<Property Name="Filter1Freq" Type="Real32" Value="590"/>
@@ -1336,21 +1339,26 @@
 					</ChildrenList>
 				</ActorMixer>
 				<ActorMixer Name="Ambience" ID="{37D12003-D25C-4D60-83A6-465D265EE791}" ShortID="789170956">
+					<PropertyList>
+						<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A504E9DE-0A74-4952-A479-CF785C5D7EB1}"/>
 						</Reference>
 						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B749DD38-F608-49F1-865C-2E75B9D51927}"/>
+							<ObjectRef Name="ambiences" ID="{E510B226-C64F-46AB-82AB-B5D455248FCA}" WorkUnitID="{B749DD38-F608-49F1-865C-2E75B9D51927}"/>
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
 						<RandomSequenceContainer Name="Amb" ID="{627803A8-83AE-4A24-9424-CCA0C82CAC1F}" ShortID="1016362641">
 							<PropertyList>
+								<Property Name="OverrideGameAuxSends" Type="bool" Value="True"/>
 								<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
 								<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
 								<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="5"/>
 								<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+								<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
 										<Value>-2</Value>
@@ -1393,24 +1401,29 @@
 					</ChildrenList>
 				</ActorMixer>
 				<ActorMixer Name="Ambience_Light" ID="{1D6CF275-98F4-4B18-A050-FC288C828385}" ShortID="891913012">
+					<PropertyList>
+						<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
+					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A504E9DE-0A74-4952-A479-CF785C5D7EB1}"/>
 						</Reference>
 						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B749DD38-F608-49F1-865C-2E75B9D51927}"/>
+							<ObjectRef Name="ambiences" ID="{E510B226-C64F-46AB-82AB-B5D455248FCA}" WorkUnitID="{B749DD38-F608-49F1-865C-2E75B9D51927}"/>
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
 						<RandomSequenceContainer Name="light" ID="{139A453B-1C54-49B4-BBD3-98035F21C9DF}" ShortID="45362999">
 							<PropertyList>
 								<Property Name="3DSpatialization" Type="int16" Value="2"/>
+								<Property Name="OverrideGameAuxSends" Type="bool" Value="True"/>
 								<Property Name="OverridePositioning" Type="bool" Value="True"/>
 								<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
 								<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+								<Property Name="UseGameAuxSends" Type="bool" Value="True"/>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
-										<Value>-4</Value>
+										<Value>-1</Value>
 									</ValueList>
 								</Property>
 							</PropertyList>
@@ -1458,7 +1471,7 @@
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A504E9DE-0A74-4952-A479-CF785C5D7EB1}"/>
 						</Reference>
 						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B749DD38-F608-49F1-865C-2E75B9D51927}"/>
+							<ObjectRef Name="ambiences" ID="{E510B226-C64F-46AB-82AB-B5D455248FCA}" WorkUnitID="{B749DD38-F608-49F1-865C-2E75B9D51927}"/>
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
@@ -1470,7 +1483,7 @@
 								<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
-										<Value>-12</Value>
+										<Value>-14</Value>
 									</ValueList>
 								</Property>
 							</PropertyList>
