@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using KinematicCharacterController;
 using System;
+using UnityEngine.Serialization;
 
 namespace KinematicCharacterController.Examples
 {
@@ -50,6 +51,10 @@ namespace KinematicCharacterController.Examples
         public float OrientationSharpness = 10f;
         public OrientationMethod OrientationMethod = OrientationMethod.TowardsCamera;
         public AkEvent FootstepSound;
+        public AkEvent JumpSound;
+        // this is an experimental value
+        // probably there is a better solution to detect when player is not moving, but I leave it for developers
+        public double MinAudibleSpeed = 0.654;
 
         [Header("Air Movement")]
         public float MaxAirMoveSpeed = 15f;
@@ -162,10 +167,10 @@ namespace KinematicCharacterController.Examples
                         
                         if (_moveInputVector != Vector3.zero)
                         {
-                            if (FootstepSound != null)
+                            /*if (FootstepSound != null)
                             {
                                 FootstepSound.HandleEvent(gameObject);
-                            }
+                            }*/
                         }
 
                         switch (OrientationMethod)
@@ -324,6 +329,12 @@ namespace KinematicCharacterController.Examples
 
                             // Smooth movement Velocity
                             currentVelocity = Vector3.Lerp(currentVelocity, targetMovementVelocity, 1f - Mathf.Exp(-StableMovementSharpness * deltaTime));
+                            
+                            float dist = Vector3.Distance(currentVelocity, Vector3.zero);
+                            if (dist > MinAudibleSpeed && FootstepSound != null)
+                            {
+                                FootstepSound.HandleEvent(gameObject);
+                            }
                         }
                         // Air movement
                         else
@@ -397,6 +408,11 @@ namespace KinematicCharacterController.Examples
                                 _jumpRequested = false;
                                 _jumpConsumed = true;
                                 _jumpedThisFrame = true;
+
+                                if (JumpSound != null)
+                                {
+                                    JumpSound.HandleEvent(gameObject);
+                                }
                             }
                         }
 

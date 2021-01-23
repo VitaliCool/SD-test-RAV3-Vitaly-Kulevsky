@@ -16,6 +16,7 @@ namespace AK
         static const AkUniqueID AMBIENCE = 85412153U;
         static const AkUniqueID DOORS = 2150196036U;
         static const AkUniqueID FOOTSTEPS = 2385628198U;
+        static const AkUniqueID JUMPSOUND = 1000191198U;
         static const AkUniqueID SOUND_LIGHT = 1327154087U;
     } // namespace EVENTS
 

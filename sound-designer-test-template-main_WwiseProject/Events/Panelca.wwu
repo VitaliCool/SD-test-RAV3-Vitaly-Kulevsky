@@ -16,6 +16,17 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+						<Event Name="JumpSound" ID="{2CE404EE-7FEE-4D46-B7A8-CA8870F98055}">
+							<ChildrenList>
+								<Action Name="" ID="{B989652F-7BED-4E83-943A-A2BF6F9D45E6}" ShortID="1058196140">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Jump" ID="{44B4F6BB-0795-4E8E-8D79-DF58A7336F6F}" WorkUnitID="{00C894C7-8160-4A68-9C99-9CE4D55B5147}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
 				</Folder>
 				<Folder Name="Doors" ID="{BF245F17-AB50-496B-9D93-473A7DB06615}" ShortID="17681592">

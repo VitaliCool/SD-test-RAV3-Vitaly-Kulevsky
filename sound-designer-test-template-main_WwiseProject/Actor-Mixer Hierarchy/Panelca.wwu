@@ -577,6 +577,147 @@
 								<ItemRef Name="step_l" ID="{D1745B97-7F24-40BE-9F9A-61FFE45C8D05}"/>
 							</Playlist>
 						</RandomSequenceContainer>
+						<RandomSequenceContainer Name="Jump" ID="{44B4F6BB-0795-4E8E-8D79-DF58A7336F6F}" ShortID="51851845">
+							<PropertyList>
+								<Property Name="InitialDelay" Type="Real64">
+									<ValueList>
+										<Value>0.2</Value>
+									</ValueList>
+								</Property>
+								<Property Name="MaxReachedBehavior" Type="int16" Value="1"/>
+								<Property Name="RandomAvoidRepeatingCount" Type="int32" Value="4"/>
+								<Property Name="UseMaxSoundPerInstance" Type="bool">
+									<ValueList>
+										<Value>True</Value>
+									</ValueList>
+								</Property>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-4</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A504E9DE-0A74-4952-A479-CF785C5D7EB1}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B749DD38-F608-49F1-865C-2E75B9D51927}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="jump_03" ID="{F49BA3A3-AE40-4F05-A1A7-28B84BBC4B41}" ShortID="725628416">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A504E9DE-0A74-4952-A479-CF785C5D7EB1}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B749DD38-F608-49F1-865C-2E75B9D51927}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="jump_03" ID="{08522158-DCFC-44D6-A976-F9D65AA54154}">
+											<Language>SFX</Language>
+											<AudioFile>jump_03.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="549452567"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="jump_03" ID="{08522158-DCFC-44D6-A976-F9D65AA54154}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="jump_04" ID="{3E8F1DF5-7E8B-49D2-B2A7-92A4578B9735}" ShortID="934832860">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A504E9DE-0A74-4952-A479-CF785C5D7EB1}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B749DD38-F608-49F1-865C-2E75B9D51927}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="jump_04" ID="{F1E9A195-EB8E-4424-A34E-AA35C4000AE8}">
+											<Language>SFX</Language>
+											<AudioFile>jump_04.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="511912256"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="jump_04" ID="{F1E9A195-EB8E-4424-A34E-AA35C4000AE8}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="jump_06" ID="{ACA61BBF-9B94-4696-B17D-A2EEF60C69B6}" ShortID="283692901">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A504E9DE-0A74-4952-A479-CF785C5D7EB1}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B749DD38-F608-49F1-865C-2E75B9D51927}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="jump_06" ID="{22556E03-12F0-4EA6-A5AF-636505E99FC3}">
+											<Language>SFX</Language>
+											<AudioFile>jump_06.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="498379162"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="jump_06" ID="{22556E03-12F0-4EA6-A5AF-636505E99FC3}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="jump_07" ID="{9EBFC3A6-9F28-4B0E-8CA8-8259471D6F3F}" ShortID="217691217">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A504E9DE-0A74-4952-A479-CF785C5D7EB1}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B749DD38-F608-49F1-865C-2E75B9D51927}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="jump_07" ID="{CDF8695F-65A8-48D3-BF8D-F14621190D2A}">
+											<Language>SFX</Language>
+											<AudioFile>jump_07.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="272590103"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="jump_07" ID="{CDF8695F-65A8-48D3-BF8D-F14621190D2A}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="jump_08" ID="{6B44DE61-3A56-4C8C-9C84-4940D676CC90}" ShortID="101035077">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A504E9DE-0A74-4952-A479-CF785C5D7EB1}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{B749DD38-F608-49F1-865C-2E75B9D51927}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="jump_08" ID="{4DF26AF0-25AC-43E3-A7F8-35C72AA858DF}">
+											<Language>SFX</Language>
+											<AudioFile>jump_08.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="919796631"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="jump_08" ID="{4DF26AF0-25AC-43E3-A7F8-35C72AA858DF}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
 					</ChildrenList>
 				</ActorMixer>
 				<ActorMixer Name="Door" ID="{2A2DC73A-8E8C-4360-AEEE-4092DF6A4015}" ShortID="633056430">
