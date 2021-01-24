@@ -8,7 +8,16 @@
 						<Reference Name="AudioDevice">
 							<ObjectRef Name="System" ID="{046C95B5-AB75-40A6-83AB-BF2046D77ED2}" WorkUnitID="{59D727B2-25F4-4611-89A0-C6ADF72C7969}"/>
 						</Reference>
-						<Reference Name="Effect0" PluginName="Wwise Peak Limiter" CompanyID="0" PluginID="110" PluginType="3">
+						<Reference Name="Effect0">
+							<Custom>
+								<Effect Name="Wwise_Gain_(Custom)" ID="{AEA6BE66-1C91-44DE-B260-26C2C12646B9}" ShortID="965053361" PluginName="Wwise Gain" CompanyID="0" PluginID="139" PluginType="3">
+									<PropertyList>
+										<Property Name="FullBandGain" Type="Real32" Value="9.5"/>
+									</PropertyList>
+								</Effect>
+							</Custom>
+						</Reference>
+						<Reference Name="Effect1" PluginName="Wwise Peak Limiter" CompanyID="0" PluginID="110" PluginType="3">
 							<ObjectRef Name="Brick_Wall_Minus_1dB_Peak_Slow_Release" ID="{9FB8DC2B-7F1C-4E4E-8FA5-50872652D2DD}" WorkUnitID="{E8613F7D-BAD3-45CD-A3ED-505576F31277}"/>
 						</Reference>
 					</ReferenceList>
